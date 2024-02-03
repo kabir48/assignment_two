@@ -26,7 +26,7 @@ function handleRequest(req, res) {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('This is About Page');
         res.end();
-    } else if (res.url == '/contact') {
+    } else if (req.url == '/contact') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('This is Contact Page');
         res.end();
